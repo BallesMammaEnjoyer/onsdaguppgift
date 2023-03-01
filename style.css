@@ -1,0 +1,133 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(bilder/pngtree-emitting-sunlight-glowing-radiation-comic-orange-light-yellow-background-image_736955.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container {
+    width: min(80ch, 100vw - 2rem);
+    margin-inline: auto;
+
+
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+i {
+    z-index: 2;
+    position: relative;
+}
+
+
+
+img {
+    max-width: 100%;
+    min-width: 3rem;
+    height: auto;
+    padding: 5%;
+
+}
+
+header {
+    background-color: #de8509;
+    z-index: 2;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+body {
+    color: #2364dc;
+    font-size: large;
+}
+
+h1  {
+}
+
+
+.hero {
+    display: grid;
+    grid-template-areas: "stack";
+}
+
+.hero>* {
+    grid-area: stack;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    padding-top: 0vw;
+    padding-bottom: 0vw;
+    padding-right: 6%;
+}
+
+main {
+
+    padding-top: 1rem;
+    padding: 2%;
+    background-color: #E57124;
+}
+
+.hero>h1 {
+    place-self: center;
+    font-size: 4rem;
+    color: rgb(135, 201, 216);
+    outline: auto;
+    outline-style: groove;
+    outline-color: rgb(17, 49, 49);
+    outline-width: 0.1ch;
+}
+
+
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+:root {
+    --color-light: #f0f0f0;
+    --color-dark: #0549c8;
+    --color-primary: #2364dc;
+    --color-secondary: #4a0080;
+}
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0.25rem;
+    padding: 0.375rem 0.75rem;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border: 1px solid transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
+}
+
+.btn-rounded {
+    border-radius: 7%;
+}
